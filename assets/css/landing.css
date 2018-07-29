@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body, html{
+    height: 100%;
+    margin: 0%
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; 
+}
+
+.bg,.bg2{
+    width: 100%;
+    height: 100%;
+    position: absolute
+}
+
+.bg{
+    -webkit-clip-path: polygon(78% 69%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(78% 69%, 100% 0%, 100% 100%, 0% 100%);   
+    z-index: -1;
+    background-color: #e74708;
+}
+
+.bg2{
+    -webkit-clip-path: polygon(100% 0, 100% 38%, 94% 75%, 0 100%, 81% 61%);
+    clip-path: polygon(100% 0, 100% 38%, 94% 75%, 0 100%, 81% 61%);
+    z-index: -1;
+    background-color: #572202;
+}
+
+.container{
+    
+    display: grid;
+    grid-template-columns: 50% auto;
+    height: auto;
+    align-self: center;
+    margin: 0 50px;
+   
+}
+
+ul{
+    list-style-type: none;
+    perspective: 1000px;
+}
+
+ul li{
+    display: grid;
+    grid-template-columns: 20%auto;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transform: rotateY(-30deg) rotateX(15deg);
+    position: absolute;
+    border-bottom: 4px solid rgba(0,0,0,.2);
+    mix-blend-mode: multiply;
+    width: 500px;
+
+}
+
+ul li:nth-child(1){
+    background-color: #7464d1;
+    top: -90px;
+    z-index: 2;
+}
+
+ul li:nth-child(2){
+    background-color: #a7b151;
+    z-index: 2;
+}
+
+ul li:nth-child(3){
+    background-color: #d19564;
+    top: 95px;
+}
+
+ul li:hover{
+    transform: rotateY(-22deg) rotateX(7deg) scale(1.05);
+    transition: transform .4s ease-out;
+    z-index: 3;
+    mix-blend-mode: normal 
+}
+
+img{
+    width: 70px
+}

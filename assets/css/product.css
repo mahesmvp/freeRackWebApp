@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.carousel-indicators li {
+    background-color: #FF0000;
+}
+.carousel-indicators .active {
+    background-color: #e0970e;
+}
+
+#myCarousel{
+    height: 70%;
+    width: 100%;
+}
+
+.glyphicon {
+    font-size: 30px;
+}
+
+#myCarousel{
+    align-items:flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.jumbotron{
+    background-color: rgb(246, 144, 28);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
